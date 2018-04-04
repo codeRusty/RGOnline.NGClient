@@ -18,6 +18,7 @@
     <link href="./assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="./assets/css/demo.css" rel="stylesheet" />
+    <base href="/">
 </head>
 
 <body class="index-page sidebar-collapse">
@@ -43,9 +44,9 @@
 
     function scrollToDownload() {
 
-        if ($('.section-download').length != 0) {
+        if ($('.section-basic').length != 0) {
             $("html, body").animate({
-                scrollTop: $('.section-download').offset().top
+                scrollTop: $('.section-basic').offset().top
             }, 1000);
         }
     }
