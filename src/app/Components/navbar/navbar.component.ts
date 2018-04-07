@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ClientAuthService } from '../../Services/client-auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor() { }
+  isUserLoggedIn: boolean;
+  isSelected:string = 'home';
+  constructor(public clientauth: ClientAuthService) { }
 
   ngOnInit() {
+    this.isUserLoggedIn = this.clientauth.isUserLoggedIn()
   }
 
 }

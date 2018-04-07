@@ -1,54 +1,34 @@
-<div class="main">
-    <div class="section section-signup" style="background-image: url('assets/img/bg11.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
-        <div class="container">
-            <div class="row">
-                <div class="card card-signup" background-color="orange">
-                    <form class="form" method="" action="">
-                        <div class="header text-center">
-                            <h4 class="title title-up">Login</h4>
-                            <div class="social-line">
-                                <a href="#pablo" class="btn btn-neutral btn-facebook btn-icon btn-round">
-                                    <i class="fa fa-facebook-square"></i>
-                                </a>
-                                <a href="#pablo" class="btn btn-neutral btn-twitter btn-icon btn-lg btn-round">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#pablo" class="btn btn-neutral btn-google btn-icon btn-round">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-
-                            <div class="input-group form-group-no-border">
-                                <span class="input-group-addon">
-                                    <i class="now-ui-icons ui-1_email-85"></i>
-                                </span>
-                                <input type="text" class="form-control" placeholder="Email...">
-                            </div>
-                            <div class="input-group form-group-no-border">
-                                <span class="input-group-addon">
-                                    <i class="now-ui-icons ui-1_email-85"></i>
-                                </span>
-                                <input type="password" class="form-control" placeholder="*****">
-                            </div>
-                            <!-- If you want to add a checkbox to this form, uncomment this code -->
-                            <div class="checkbox">
-                                <input id="checkboxSignup" type="checkbox">
-                                <label for="checkboxSignup">
-                                    Remmeber me
-                                </label>
-                            </div>
-                        </div>
-                        <div class="footer text-center">
-                            <a href="" class="btn btn-neutral btn-round btn-lg">Get Started</a>
-                        </div>
+<section id="form"><!--form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-1">
+                <div class="login-form"><!--login form-->
+                    <h2>Login to your account</h2>
+                    <form action="#">
+                        <input type="text" placeholder="Name" />
+                        <input type="email" placeholder="Email Address" />
+                        <span>
+                            <input type="checkbox" class="checkbox"> 
+                            Keep me signed in
+                        </span>
+                        <button type="submit" class="btn btn-default">Login</button>
                     </form>
-                </div>
+                </div><!--/login form-->
             </div>
-            <div class="col text-center">
-                <a href="" class="btn btn-simple btn-round btn-white btn-lg" routerLink="/register">Sign Up First</a>
+            <div class="col-sm-1">
+                <h2 class="or">OR</h2>
+            </div>
+            <div class="col-sm-4">
+                <div class="signup-form"><!--sign up form-->
+                    <h2>New User Signup!</h2>
+                    <form action="#">
+                        <input type="text" placeholder="Name"/>
+                        <input type="email" placeholder="Email Address"/>
+                        <input type="password" placeholder="Password"/>
+                        <button type="submit" class="btn btn-default">Signup</button>
+                    </form>
+                </div><!--/sign up form-->
             </div>
         </div>
     </div>
-</div>
+</section><!--/form-->
